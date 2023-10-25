@@ -15,6 +15,13 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <style>
+        #prf{
+            border-radius: 50%;
+            width: 80px; 
+            height: 80px;
+        }
+    </style>
     <script>
         $(document).ready(function () {
             listing();
@@ -38,7 +45,7 @@
                             <div class="card">
                                 <img src="../${file}" class="card-img-top" alt="no img">
                                 <div class="card-body">
-                                    <img src="../${profile}" class="img-fluid rounded-circle" alt="no img" width='80' height='80'>
+                                    <img src="../${profile}" class="img-fluid" alt="no img" id="prf">
                                     <h5 class="card-title">${tittle}</h5>
                                     <p class="card-text">${content}</p>
                                     <h6 class="card-subtitle mb-2 text-body-secondary">${time}</h6>
